@@ -1,7 +1,7 @@
 body {
-    font-family: monospace;
-    background-color: black;
     size: auto;
+    background-color: black;
+    font-family: monospace;
 }
 
 strong {
@@ -10,6 +10,11 @@ strong {
 
 em {
     color: white;
+}
+
+h2 {
+    color: red;
+    font-size: 90px;
 }
 
 .h1_a {
@@ -25,12 +30,8 @@ em {
     padding-left: 800px;
 }
 
-.b1 {
-    background-color: black;
-    shape-rendering: optimizeSpeed;
-    box-shadow: 0em;
+.bD {
     font-size: xx-large;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 10px;
-    border-color: red;
+    background-color: black;
 }
