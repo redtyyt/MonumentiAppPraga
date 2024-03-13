@@ -1,7 +1,35 @@
+html {
+    background-color: black;
+}
 body {
     font-family: monospace;
-    background-color: black;
     size: auto;
+    background-color: black;
+    color: white;
+    margin: 0; /* Rimuove il margine predefinito */
+}
+
+footer {
+    background-color: #333; /* Puoi personalizzare il colore dello sfondo del footer */
+    color: white; /* Imposta il colore del testo del footer */
+    position: relative; /* Aggiunge posizionamento relativo per il footer */
+    z-index: 1000; /* Assicura che il footer sia sopra l'overlay */
+    margin-top: 50px; /* Aggiunge uno spazio sopra il footer */
+    padding: 10px; /* Aggiunge un po' di spazio intorno al testo del footer */
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Sfondo nero con trasparenza */
+    z-index: 999; /* Assicura che l'overlay sia sopra tutti gli altri elementi */
+    display: none; /* Inizialmente nascosto */
+}
+#redirectButton {
+    position: relative; /* Aggiunge posizionamento relativo per il bottone */
+    z-index: 1000; /* Assicura che il bottone sia sopra l'overlay */
 }
 
 strong {

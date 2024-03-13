@@ -1,52 +1,57 @@
-<html>
-    <head>
-        <title>Monumenti App Praga</title>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body>
-        <div class="header">
-            <a class="h1_a" href="index.html">Monumenti App Praga</a>
-            <br />
-            <content style="color: red;" class="h2_c">by <a href="https://github.com/redtyyt">redtyyt</a></content>
-        </div>
-        <div class="body_1">
-            <br />
-            <br />
-            <a href="?NON_ANCORA_PRONTO!" style="font-size: xx-large;">Cos'è?</a>
-            <br />
-        </div>
-        <div class="body_2">
-            <button style="color: crimson;" class="b1" id="but1">Download</button>
-            <script>
-                const downloadButton = document.getElementById("but1");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monumenti App Praga</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
-downloadButton.addEventListener('click', function() {
-    window.location.href = "https://praga-monumentiapp.vercel.app/download.html";
-})
-            </script>
-        </div>
-        <br />
-        <div class="body_3">
-            <strong>Non è presente nessuna immagine...</strong>
-        </div>
-    </body>
+<div class="header">
+    <a class="h1_a" href="index.html">Monumenti App Praga</a>
+    <br />
+    <content style="color: red;" class="h2_c">by <a href="https://github.com/redtyyt">redtyyt</a></content>
+</div>
+<div class="body_1">
+    <br />
+    <br />
+    <a href="?NON_ANCORA_PRONTO!" style="font-size: xx-large;">Cos'è?</a>
+    <br />
+</div>
+<div class="body_2">
+    <button style="color: crimson;" class="b1" id="but1">Download</button>
+    <script>
+        const downloadButton = document.getElementById("but1");
+        const overlay = document.getElementById("overlay");
+
+        downloadButton.addEventListener('click', function() {
+            document.body.style.display = 'none';
+        const footer = document.querySelector('footer');
+        if (footer) {
+            footer.style.display = 'none';
+        }
+
+            setTimeout(function() {
+                console.log("Reindirizzamento dopo 2 secondi.");
+                window.location.href = "https://praga-monumentiapp.vercel.app/download.html";
+                console.log("REINDIRIZZAMENTO IN CORSO...");
+            }, 2000)
+        })
+    </script>
+</div>
+<br />
+<div class="body_3">
+    <strong>Non è presente nessuna immagine...</strong>
+</div>
+<div id="overlay"></div>
+</body>
+<footer>
+    <em>Copyright "redtyyt" and "FOXAN Studios"</em>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <footer>
-        <em>Copyright "redtyyt" and "FOXAN Studios"</em>
-        <br>
-        <br>
-        <br>
-        <strong>Covered by Creative Commons 0</strong>
-    </footer>
+    <strong>Covered by Creative Commons 0</strong>
+</footer>
+
 </html>
