@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "file": "praga.html",
+            "name": "Launch Chrome against index file",
+            "file": "web/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
